@@ -1,0 +1,11 @@
+/home/tomasz/Programowanie/MorePizza/bin/Debug/netcoreapp3.1/MorePizza
+/home/tomasz/Programowanie/MorePizza/bin/Debug/netcoreapp3.1/MorePizza.deps.json
+/home/tomasz/Programowanie/MorePizza/bin/Debug/netcoreapp3.1/MorePizza.runtimeconfig.json
+/home/tomasz/Programowanie/MorePizza/bin/Debug/netcoreapp3.1/MorePizza.runtimeconfig.dev.json
+/home/tomasz/Programowanie/MorePizza/bin/Debug/netcoreapp3.1/MorePizza.dll
+/home/tomasz/Programowanie/MorePizza/bin/Debug/netcoreapp3.1/MorePizza.pdb
+/home/tomasz/Programowanie/MorePizza/obj/Debug/netcoreapp3.1/MorePizza.csprojAssemblyReference.cache
+/home/tomasz/Programowanie/MorePizza/obj/Debug/netcoreapp3.1/MorePizza.AssemblyInfoInputs.cache
+/home/tomasz/Programowanie/MorePizza/obj/Debug/netcoreapp3.1/MorePizza.AssemblyInfo.cs
+/home/tomasz/Programowanie/MorePizza/obj/Debug/netcoreapp3.1/MorePizza.dll
+/home/tomasz/Programowanie/MorePizza/obj/Debug/netcoreapp3.1/MorePizza.pdb

@@ -20,7 +20,7 @@ namespace MorePizza
                 TypesOfPizza = typesOfPizza;
             }
             
-            TypeOfPizza.TypesOfPizzas = 0;
+            TypeOfPizza.nextID = 0;
             Pizzas = new List<TypeOfPizza>();
 
             for (int i = 2; i < menu.Length; i++)

@@ -3,13 +3,13 @@ namespace MorePizza
 {
     public class TypeOfPizza
     {
-        public static int TypesOfPizzas = 0;
+        public static int nextID = 0;
         public int ID { get; set; }
         public int Slices { get; set; }
 
         public TypeOfPizza(int Slices)
         {
-            this.ID = TypesOfPizzas++;
+            this.ID = nextID++;
             this.Slices = Slices;
         }
     }

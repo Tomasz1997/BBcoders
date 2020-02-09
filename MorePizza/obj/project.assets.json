@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/tomasz/Programowanie/MorePizza/MorePizza.csproj",
+      "projectUniqueName": "/home/tomasz/Programowanie/BBcoders/MorePizza/MorePizza.csproj",
       "projectName": "MorePizza",
-      "projectPath": "/home/tomasz/Programowanie/MorePizza/MorePizza.csproj",
+      "projectPath": "/home/tomasz/Programowanie/BBcoders/MorePizza/MorePizza.csproj",
       "packagesPath": "/home/tomasz/.nuget/packages/",
-      "outputPath": "/home/tomasz/Programowanie/MorePizza/obj/",
+      "outputPath": "/home/tomasz/Programowanie/BBcoders/MorePizza/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/tomasz/.nuget/NuGet/NuGet.Config"

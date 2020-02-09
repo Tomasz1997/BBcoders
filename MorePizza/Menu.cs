@@ -22,7 +22,7 @@ namespace MorePizza
 
             Pizzas = new List<TypeOfPizza>();
 
-            int pizzaID = 0;
+            int ID = 0;
             for (int i = 2; i < menu.Length; i++)
             {
                 var res3 = int.TryParse(menu[i], out int slices);
@@ -30,9 +30,9 @@ namespace MorePizza
                 {
                     if (menu[i] != "")
                     {
-                        var pizza = new TypeOfPizza(pizzaID, slices);
+                        var pizza = new TypeOfPizza(ID, slices);
                         Pizzas.Add(pizza);
-                        pizzaID++;
+                        ID++;
                     }
                 }
             }
@@ -40,34 +40,22 @@ namespace MorePizza
 
         public List<TypeOfPizza> GenerateOrder()
         {
-            // Policzenie sumy wszystkich kawałków
-            var SumOfSlices = Pizzas.Sum(x => x.SlicesOfPizza);
-            
-            // Jeżeli wszystkie pizze mogą zostać zamówione, to zamawiamy wszystkie
+            var SumOfSlices = Pizzas.Sum(pizza => pizza.Slices);
             if (SumOfSlices <= MaximumSlice) return Pizzas;
         
-            // Sortujemy liste pizz'cami wg. ilości kawałków malejąco
-            Pizzas = Pizzas.OrderByDescending(x => x.SlicesOfPizza).ToList();
-
-            // Tworzymy liste z gotowym zamówieniem
+            Pizzas = Pizzas.OrderByDescending(pizza => pizza.Slices).ToList();
             var resultOrder = new List<TypeOfPizza>();
-
-            // Aktualna ilość kawałków
             int CurrentSlices = 0;
 
-            // Dobieramy pizze, która zmieści się w zadanym ograniczeniu
             foreach (var pizza in Pizzas)
             {
-                if (pizza.SlicesOfPizza + CurrentSlices <= MaximumSlice)
+                if (pizza.Slices + CurrentSlices <= MaximumSlice)
                 {
-                    CurrentSlices += pizza.SlicesOfPizza;
+                    CurrentSlices += pizza.Slices;
                     resultOrder.Add(pizza);
                 }
             }
-
-            // Sortujemy pizze wg. identyfikatora
-            resultOrder = resultOrder.OrderBy(x => x.PizzaID).ToList();
-            return resultOrder;
+            return resultOrder.OrderBy(pizza => pizza.ID).ToList();
         }
 
     }

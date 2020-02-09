@@ -1,14 +1,15 @@
+using System.Threading;
 namespace MorePizza
 {
     public class TypeOfPizza
     {
-        public int PizzaID { get; set; }
-        public int SlicesOfPizza { get; set; }
+        public int ID { get; set; }
+        public int Slices { get; set; }
 
-        public TypeOfPizza(int pizzaID, int pizzaSlices)
+        public TypeOfPizza(int ID, int Slices)
         {
-            this.PizzaID = pizzaID;
-            this.SlicesOfPizza = pizzaSlices;
+            this.ID = ID;
+            this.Slices = Slices;
         }
     }
 }

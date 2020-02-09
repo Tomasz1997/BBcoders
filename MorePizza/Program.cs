@@ -36,11 +36,11 @@ namespace MorePizza
                 output.AppendLine(orders.Count().ToString());
                 foreach (var order in orders)
                 {
-                    output.Append(order.PizzaID + " ");
+                    output.Append(order.ID + " ");
                 }
                 file.CreateFile(pathsOUT[i], output.ToString());
 
-                Console.WriteLine("Aktualny plik: " + pathsIN[i] + " - wynik: " + orders.Sum(x => x.SlicesOfPizza));
+                Console.WriteLine("Aktualny plik: " + pathsIN[i] + " - wynik: " + orders.Sum(pizza => pizza.Slices));
             }
         }
     }

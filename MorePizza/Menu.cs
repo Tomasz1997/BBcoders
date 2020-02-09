@@ -19,10 +19,10 @@ namespace MorePizza
                 MaximumSlice = maxSlice;
                 TypesOfPizza = typesOfPizza;
             }
-
+            
+            TypeOfPizza.TypesOfPizzas = 0;
             Pizzas = new List<TypeOfPizza>();
 
-            int ID = 0;
             for (int i = 2; i < menu.Length; i++)
             {
                 var res3 = int.TryParse(menu[i], out int slices);
@@ -30,9 +30,8 @@ namespace MorePizza
                 {
                     if (menu[i] != "")
                     {
-                        var pizza = new TypeOfPizza(ID, slices);
+                        var pizza = new TypeOfPizza(slices);
                         Pizzas.Add(pizza);
-                        ID++;
                     }
                 }
             }
